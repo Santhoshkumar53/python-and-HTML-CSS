@@ -1,0 +1,17 @@
+.box{
+     width: 200px;
+     height: 200px;
+     background-color: #ffffff;
+     border-radius: 15px;
+     scale: .05s;
+     transition: all 0.5s;
+     
+}
+
+.box:hover{
+     scale: 1;
+     rotate: 180deg;
+}
+
+
+

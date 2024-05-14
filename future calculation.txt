@@ -1,0 +1,142 @@
+import tkinter
+gui = tkinter.Tk()
+gui . title("FORM")
+gui.config(bg = "grey")
+gui.geometry("600x600")
+
+def doread():
+    a = e1.get()
+    print(a)
+    b = e2.get()
+    print(b)
+    c = e3.get()
+    print(c)
+    
+def doerase():
+    
+    e1.delete(0,tkinter.END)
+    e2.delete(0,tkinter.END)
+    e3.delete(0,tkinter.END)
+    e4.delete(0,tkinter.END)
+    e5.delete(0,tkinter.END)
+    e6.delete(0,tkinter.END)
+    e7.delete(0,tkinter.END)
+    e8.delete(0,tkinter.END)
+    e9.delete(0,tkinter.END)
+    e10.delete(0,tkinter.END)
+    e11.delete(0,tkinter.END)
+    
+def docalculate():
+    
+    a = e1.get()
+    b = e2.get()
+    c = e3.get()
+    q = e4.get()
+    w = e5.get()
+    t = e6.get()
+    s = e7.get()
+    h = e8.get()
+    u = e9.get()
+    x = e10.get()
+    y = e11.get()
+    a = int(a)
+    b = int(b)
+    c = int(c)
+    q = a * 12
+    e4.insert(0,q)
+    w = a * 60
+    e5.insert(0,w)
+    t = a * 120
+    e6.insert(0,t)
+    s = a * 12 * 25
+    e7.insert(0,s)
+    h = 12 * 60
+    e8.insert(0,h)
+    u = 52 * 25
+    e9.insert(0,u)
+    x = 365 * 25
+    e10.insert(0,x)
+    y = c + b
+    e11.insert(0,y)
+    
+    
+    
+
+
+b1 = tkinter.Button(gui,text = "CALCULATE",bg = "white",fg = "black",command = docalculate)
+b1.place(x = 200,y = 480)
+
+b2 = tkinter.Button(gui,text = "CLEAR",bg = "white",fg = "black",command = doerase)
+b2.place(x = 200,y = 510)
+
+l1 = tkinter.Label(gui,text = "FUTURE CALCULATION",bg = "white",fg = "black")
+l1.place(x = 150,y = 80)
+
+l1 = tkinter.Label(gui,text = "SAVING PER MONTH",bg = "white",fg = "black")
+l1.place(x = 50,y = 120)
+
+l2 = tkinter.Label(gui,text = "TOTAL YEAR",bg = "white",fg = "black")
+l2.place(x = 50,y = 150)
+
+l3 = tkinter.Label(gui,text = "STARTING YEAR",bg = "white",fg = "black")
+l3.place(x = 50,y = 180)
+
+l4 = tkinter.Label(gui,text = "ONE YEAR SAVED AMOUNT",bg = "white",fg = "black")
+l4.place(x = 50,y = 210)
+
+l5 = tkinter.Label(gui,text = "FIVE YEAR SAVED AMOUNT",bg = "white",fg = "black")
+l5.place(x = 50,y = 240)
+
+l6 = tkinter.Label(gui,text = "TEN YEAR SAVED AMOUNT",bg = "white",fg = "black")
+l6.place(x = 50,y = 270)
+
+l7 = tkinter.Label(gui,text = "25 YEAR SAVED AMOUNT",bg = "white",fg = "black")
+l7.place(x = 50,y = 300)
+
+l8 = tkinter.Label(gui,text = "TOTAL MONTH SAVED",bg = "white",fg = "black")
+l8.place(x = 50,y = 330)
+
+l9 = tkinter.Label(gui,text = "TOTAL WEEK SAVED",bg = "white",fg = "black")
+l9.place(x = 50,y = 360)
+
+l10 = tkinter.Label(gui,text = "TOTAL DAYS SAVED",bg = "white",fg = "black")
+l10.place(x = 50,y = 390)
+
+l11 = tkinter.Label(gui,text = "CLOSING YEAR",bg = "white",fg = "black")
+l11.place(x = 50,y = 430)
+
+
+e1 = tkinter.Entry(gui,text = "",bg = "white",fg = "black")
+e1.place(x = 250,y = 120)
+
+e2 = tkinter.Entry(gui,text = "",bg = "white",fg = "black")
+e2.place(x = 250,y = 150)
+
+e3 = tkinter.Entry(gui,text = "",bg = "white",fg = "black")
+e3.place(x = 250,y = 180)
+
+e4 = tkinter.Entry(gui,text = "",bg = "white",fg = "black")
+e4.place(x = 250,y = 210)
+
+e5 = tkinter.Entry(gui,text = "",bg = "white",fg = "black")
+e5.place(x = 250,y = 240)
+
+e6 = tkinter.Entry(gui,text = "",bg = "white",fg = "black")
+e6.place(x = 250,y = 280)
+
+e7 = tkinter.Entry(gui,text = "",bg = "white",fg = "black")
+e7.place(x = 250,y = 310)
+
+e8 = tkinter.Entry(gui,text = "",bg = "white",fg = "black")
+e8.place(x = 250,y = 340)
+
+e9 = tkinter.Entry(gui,text = "",bg = "white",fg = "black")
+e9.place(x = 250,y = 380)
+
+e10 = tkinter.Entry(gui,text = "",bg = "white",fg = "black")
+e10.place(x = 250,y = 410)
+
+e11 = tkinter.Entry(gui,text = "",bg = "white",fg = "black")
+e11.place(x = 250,y = 440)
+
+gui.mainloop()

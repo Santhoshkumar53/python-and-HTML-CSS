@@ -1,0 +1,77 @@
+import tkinter
+import math
+gui = tkinter.Tk()
+gui . title("TRINOMETRY CALCULATOR")
+gui.config(bg = "grey")
+gui.geometry("400x400")
+
+
+
+def doread():
+    a = e1.get()
+    print(a)
+    b = e2.get()
+    print(b)
+    
+    
+def doerase():
+        
+    e1.delete(0,tkinter.END)
+    e2.delete(0,tkinter.END) 
+    
+def dosine():
+    a = e1.get()
+    a = float(a)
+    b = math.sin(a)
+    e2.delete(0,tkinter.END)
+    e2.insert(0,b)
+    
+def docosine():
+        a = e1.get()
+        a = float(a)
+        b = math.cos(a)
+        e2.delete(0,tkinter.END)
+        e2.insert(0,b)
+        
+def dotan():
+            a = e1.get()
+            a = float(a)
+            b = math.tan(a)
+            e2.delete(0,tkinter.END)
+            e2.insert(0,b)
+    
+    
+b1 = tkinter.Button(gui,text = "SIN",bg = "white",fg = "black",command = dosine)
+b1.place(x = 100,y = 180)
+
+b2 = tkinter.Button(gui,text = "COS",bg = "white",fg = "black",command = docosine)
+b2.place(x = 150,y = 180)
+
+b3 = tkinter.Button(gui,text = "TAN",bg = "white",fg = "black",command = dotan)
+b3.place(x = 200,y = 180)
+
+b4 = tkinter.Button(gui,text = "CLEAR",bg = "white",fg = "black",command = doerase)
+b4.place(x = 250,y = 180)
+
+
+
+
+l1 = tkinter.Label(gui,text = "VALUE TO FIND",bg = "white",fg = "black")
+l1.place(x = 50,y = 120)
+
+l2 = tkinter.Label(gui,text = "ANSWER",bg = "white",fg = "black")
+l2.place(x = 50,y = 150)
+
+e1 = tkinter.Entry(gui,text = "",bg = "white",fg = "black")
+e1.place(x = 200,y = 120)
+
+e2 = tkinter.Entry(gui,text = "",bg = "white",fg = "black")
+e2.place(x = 200,y = 150)
+
+
+
+
+gui.mainloop()
+
+
+
